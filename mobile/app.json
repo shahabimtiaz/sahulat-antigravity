@@ -25,15 +25,32 @@
       "package": "com.sahulat.app",
       "adaptiveIcon": {
         "backgroundColor": "#0a0a0b"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "plugins": [
       "expo-router",
-      ["expo-image-picker", { "photosPermission": "Sahulat needs access to your photos so you can attach service proof images to a booking." }]
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Sahulat needs access to your photos so you can attach service proof images to a booking."
+        }
+      ]
     ],
-    "experiments": { "typedRoutes": true },
+    "experiments": {
+      "typedRoutes": true
+    },
     "extra": {
-      "apiBase": "https://sahulat-antigravity.vercel.app"
-    }
+      "apiBase": "https://sahulat-antigravity.vercel.app",
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9c4438ca-fa9e-4de0-9427-aed5fd719d2b"
+      }
+    },
+    "owner": "shahab12"
   }
 }
