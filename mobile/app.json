@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Sahulat",
+    "slug": "sahulat",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "sahulat",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "backgroundColor": "#0a0a0b",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a0b"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sahulat.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Sahulat needs access to your photos so you can attach service proof images to a booking."
+      }
+    },
+    "android": {
+      "package": "com.sahulat.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0a0b"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      ["expo-image-picker", { "photosPermission": "Sahulat needs access to your photos so you can attach service proof images to a booking." }]
+    ],
+    "experiments": { "typedRoutes": true }
+  }
+}

@@ -1,0 +1,56 @@
+node_modules
+**/node_modules
+.next
+**/.next
+.env
+.env.local
+.env*.local
+**/.env
+**/.env.local
+**/.env*.local
+.DS_Store
+*.log
+.vercel
+next-env.d.ts
+dist
+**/dist
+.turbo
+.supabase
+coverage
+
+# Mobile build artifacts
+mobile/.expo
+mobile/ios
+mobile/android
+mobile/web-build
+
+# Submission bundle output
+antigravity-traces.zip
+.antigravity-bundle/
+
+# Tooling / agent state / IDE
+.omc/
+.claude/
+.cursor/
+.windsurf/
+.aider*
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+
+# Build cache
+tsconfig.tsbuildinfo
+
+# Personal / submission artifacts (kept locally, not for the public repo)
+DEMO.md
+DEMO_SCRIPT.md
+SUBMISSION.md
+IOS_SIMULATOR.md
+
+# Ad-hoc dev probes (not part of the project surface)
+/test_*.js
+/test_*.sh
+/896
+
+# Supabase CLI scratch cache
+supabase/.temp/

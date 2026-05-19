@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "type": "http",
+      "url": "https://mcp.supabase.com/mcp?project_ref=YOUR_SUPABASE_PROJECT_REF&features=database,storage,docs",
+      "headers": {
+        "Authorization": "Bearer YOUR_SUPABASE_PERSONAL_ACCESS_TOKEN"
+      }
+    },
+
+    "toolbox-postgres": {
+      "command": "npx",
+      "args": ["-y", "@toolbox-sdk/server", "--prebuilt=postgres", "--stdio"],
+      "env": {
+        "POSTGRES_HOST": "aws-0-ap-south-1.pooler.supabase.com",
+        "POSTGRES_PORT": "6543",
+        "POSTGRES_DB": "postgres",
+        "POSTGRES_USER": "postgres.YOUR_PROJECT_REF",
+        "POSTGRES_PASSWORD": "YOUR_DB_PASSWORD"
+      }
+    },
+
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/user/antigravity-service-orchestrator"]
+    },
+
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_YOUR_TOKEN_WITH_REPO_SCOPE"
+      }
+    }
+  }
+}
