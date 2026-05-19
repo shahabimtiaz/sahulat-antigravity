@@ -37,6 +37,18 @@
         {
           "photosPermission": "Sahulat needs access to your photos so you can attach service proof images to a booking."
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "packagingOptions": {
+              "pickFirst": [
+                "**/libworklets.so"
+              ]
+            }
+          }
+        }
       ]
     ],
     "experiments": {
